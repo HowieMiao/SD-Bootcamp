@@ -16,15 +16,11 @@ const rl = firstName.createInterface({
 	input: process.stdin,
 	output: process.stdout,
   });
-
-async function test(){  
-    rl.question("What is your name? ", await function (response) {
-        console.log(`Oh, so your name is ${response}`);
-        rl.close();
-    });
-}
-
-test();
+  
+rl.question("What is your name? ", await function (response) {
+    console.log(`Oh, so your name is ${response}`);
+    rl.close();
+});
 
 // console.log("titanic".toUpperCase());
 // console.log("QUIETLY".toLowerCase());
