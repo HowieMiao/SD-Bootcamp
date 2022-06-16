@@ -63,7 +63,7 @@ async function guesserRandom(){
             console.log("bad input");
         }
     }
-    console.log("It took you: " + (guessCount + 1) + " guesses");
+    console.log("It took me: " + (guessCount + 1) + " guesses");
 }
 
 
@@ -110,7 +110,7 @@ async function guesserOptimized(){
             console.log("bad input");
         }
     }
-    console.log("It took you: " + (guessCount + 1) + " guesses");
+    console.log("It took me: " + (guessCount + 1) + " guesses");
 }
 
 async function guesserReverse(){
@@ -151,6 +151,7 @@ function menu(){
     console.log("Win Count: " + winCount);
     console.log("What game would you like to play?\n 1.) Guess the number but I guess random numbers\n 2.) Guess the number but I'm solve in [log2(n)+1]\n 3.) You guess my number\n 4.) Quit\n");
 }
+
 async function main(){
     menu();
     let numInput;

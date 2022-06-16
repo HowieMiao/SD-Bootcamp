@@ -38,4 +38,28 @@ function fizzBuzz(maxiumum) {
     }
   }
 
-  fizzBuzz(10);
+//   fizzBuzz(10);
+
+// CIRCLE CLASS
+
+class Circle1{
+    constructor(radius){
+        this.radius = radius;
+    }
+
+    circumference(){
+        let circum = (this.radius * (2 * Math.PI)).toFixed(2);
+        console.log(circum);
+        return circum
+    }
+
+    area(){
+        let area = ((Math.pow(this.radius,2)) * Math.PI).toFixed(2)
+        console.log(area)
+        return area;
+    }
+}
+
+let circ = new Circle1(4);
+circ.circumference()
+circ.area();
