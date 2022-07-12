@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   
+    <div class = "container">
+        <form action="" id = "search-form" method="get">
+            <input type = "text" id="search-input" placeholder = "Enter Poke ID">
+            <input type="submit" value = "Catch!" id="submit-button"></button>
+        </form>
+    </div>
+    <div class ="card">
+        <div class = "card-header">
+            <h1 class="name">Pokemon Name</h1>
+            <p id="name"></p>
+            <h3 class="ID"><span>ID</span></h3>
+            <p id="ID"></p>
+            <h3 class="card-img">IMG</h3>
+            <img id="img" src=>
+            <h3 class="weight">WEIGHT</h3>
+            <p id="weight"></p>
+        </div>
+    </div> 
+    <script src="scripts.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>API</title>
+</head>
+<body>
+    <div class="container">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter Pokemon ID">
+            <button type="submit" value="Catch!" class="submit-btn">Catch!</button>
+        </form>
+        <div class="card">
+            <div class="card-header">
+                <h1 id="name">Pokemon Name</h1>
+                <h3 id="hp"><span>HP</span>Power</h3>
+            </div>
+            <div class="card-img">
+                <img id="img" src="" alt="Pokemon Picture">
+            </div>
+            <div class="card-body" id="parent">
+                <div class="card-body-header">
+                    <h3>Ability</h3>
+                </div>
+                <div id="test">
+                    <span id="ability">Tag Coach</span>
+                </div>
+            <div class="paragraph">
+                <p id="weight1">
+                    Pokemon weighs <em><strong id="weight"></strong>lbs</em>
+                </p>
+            </div>
+            </div>
+            <div class="card-footer">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

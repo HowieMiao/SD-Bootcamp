@@ -44,7 +44,12 @@ function fizzBuzz(maxiumum) {
 
 class Circle1{
     constructor(radius){
-        this.radius = radius;
+        if(typeof radius != 'number'){
+            throw "bad input";
+        }
+        else{
+            this.radius = radius;
+        }
     }
 
     circumference(){
@@ -60,6 +65,36 @@ class Circle1{
     }
 }
 
-let circ = new Circle1(4);
-circ.circumference()
-circ.area();
+// let circ = new Circle1(4);
+// circ.circumference()
+// circ.area();
+
+
+class Pizza{
+    constructor(toppings){
+        if(toppings.includes("pineapple")){
+            throw "no pineapples allowed"
+        }
+        else{
+            this.toppings = toppings;
+        }
+    }
+}
+
+
+
+// fetch("https://jsonplaceholder.typicode.com/posts/1")
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+
+async function getData(){
+    let response = await fetch("https://api.openbrewerydb.org/breweries/search?query=boulder&per_page=5")
+    let data = await response.json();
+    console.table(data);
+    data.forEach(function(response){
+        console.log(response.name)
+    })
+}
+
+getData();
+
